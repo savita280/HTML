@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Javascript</title>
+<script src="external.js" type="text/Javascript"></script>
+</head>
+<body>
+
+    <div id="D1">
+        Hello Students
+    </div>
+    <hr>
+
+    <h4>Inline</h4>
+    <input type="button" value="Alert Inline" onclick="alert('Hello Guys')">
+    <input type="button" value="Confirm Inline" onclick="confirm('Are you sure?')">
+    <input type="button" value="Prompt Inline" onclick="prompt('Enter Firstname:')">
+    <hr>
+
+    <h4>External</h4>
+    <input type="button" value="Alert External" onclick="demoExternalAlert()">
+    <input type="button" value="Confirm External" onclick="demoExternalConfirm()">
+    <input type="button" value="Prompt External" onclick="demoExternalPrompt()">
+    <hr>
+
+    <h4>Internal</h4>
+    <input type="button" value="Alert Internal" onclick="demoInternalAlert()">
+    <input type="button" value="Confirm Internal" onclick="demoInternalConfirm()">
+    <input type="button" value="Prompt Internal" onclick="demoInternalPrompt()">
+    <hr>
+
+    <input type="button" value="Body Bg Green" onclick="bodyBGGreen()">
+    <input type="button" value="Div Bg Gray" onclick="divBGGray()">
+    <hr>
+
+    <input type="button" value="Body Bg Prompt" onclick="bodyBGDynamic()">
+    <input type="button" value="Div Bg Prompt" onclick="divBGDynamic()">
+    <hr>
+
+    <input type="color" id="CP1" onclick="bodyBGCP1()">
+    <input type="color" id="CP2" onclick="divBGCP2()">
+
+    <script type="text/Javascript">
+        function bodyBGGreen() {
+        document.body.style.backgroundColor="Green"        
+        }
+
+        function divBGGray() {
+            document.getElementById("D1").style.backgroundColor="Gray";
+        }
+        
+        function bodyBGCP1(){
+            document.body.style.backgroundColor=document.getElementById(CP1)
+        }
+        
+        function divBGCP2() {
+            document.getElementById("D1").style.backgroundColor=document.getElementById()
+        }
+
+        function divBGDynamic(){
+            document.getElementById("D1").style.backgroundColor=prompt("Enter color Name here:")
+        }
+
+        function bodyBGDynamic(){
+            document.body.style.backgroundColor=prompt("Enter color Name here:")
+        }
+
+        function demoInternalAlert(){
+            alert("Internal Alert")
+        }
+
+        function demoInternalConfirm() {
+        if(confirm("Are you sure...")){
+            alert("YESSS")
+        }
+        else{
+            alert("NOOOO")
+        }
+
+        }
+        function demoInternalPrompt() {
+            var fname=prompt("Enter Firstname Here...");
+            var lname=prompt("Enter Lastname Here...");
+            alert(fname+" "+lname);
+        }
+    </script>
+
+</body>
+</html>

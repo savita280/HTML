@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Element</title>
+    <style>
+        #MainUL li ul li{display: none;}
+        #MainUL li:hover ul li{display: block;}
+        #MainUL li:hover ul li ul li{display: none;}
+        #MainUL li ul li:hover ul li{display: block;}
+        #MainUL li ul li:hover ul li ul li{display: none;}
+        #MainUL li ul li ul li:hover ul li{display: block;}
+        #MainUL li ul li ul li:hover ul li ul li{display: none;}
+        
+    </style>
+</head>
+<body>
+    <ul id="MainUL">
+        <li>Google
+            <ul>
+               <li>Gmail
+                <ul>
+                    <li>Sign In
+                        <ul>
+                            <li>Sign in as Admin</li>
+                            <li>Sign in as Member</li>
+                        </ul>
+                    </li>
+                    <li>Sign Up</li>
+                </ul>
+               </li>
+               <li>Youtube</li>
+               <li>GDrive</li>
+               <li>GMap</li>
+            </ul>
+        </li>
+
+        <li>Facebook
+            <ul>
+                <li>Sign In</li>
+                <li>Sign Up</li>
+            </ul>
+        </li>
+        <li>Microsoft</li>
+        <li>MSN</li>
+        <li>Amazon</li>
+    </ul>
+</body>
+</html>

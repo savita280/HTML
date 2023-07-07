@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style type="text/css">
+        #D1{
+            width: 100vh;
+            height: 100vw; 
+            background-color: red
+           }
+           
+        @media (min-width:500px)
+        {
+            #D1{
+                width:60vh;
+                height: 40vw;
+                background-color: gray;
+                }
+        }
+
+        @media (min-width:768px)
+        {
+            #D1{
+                width:40vh;
+                height: 40vw;
+                background-color: orange;
+                }
+        }
+        @media (min-width:962px)
+        {
+            #D1{
+                width:60vh;
+                height: 40vw;
+                background-color: yellowgreen;
+                }
+        }
+        @media (min-width:1200px)
+        {
+            #D1{
+                width:80vh;
+                height: 80vw;
+                background-color: lightblue;
+                }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="D1">Media Query Demo</div>
+</body>
+</html>

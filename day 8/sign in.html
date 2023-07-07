@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        input[type=text]
+        input[type=password]
+        #f1{
+        width:100%;
+        padding:12px 40px;
+        margin:8px 0;
+        display: inline-block;
+        
+        box-sizing:border-box;
+        
+        box-shadow: 6px 6px 6px rgb(33, 35, 36);
+        }
+
+        button{
+            background-color: rgb(30, 158, 204);
+            color: white;
+            padding: 4px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+
+        .cointainer{
+            padding: 80px;
+        }
+
+        .fontuser{
+            position: relative;
+        }
+        .fontuser i{
+            /* position: absolute;
+            left: 15px;
+            top: 40px; */
+            color: darkblue;
+        }
+
+        .fontpassword{
+            position: relative;
+        }
+
+        .fontpassword i{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cointainer">
+        <div class="fontuser">
+            <div id="f1" class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-6 col-offset-lg-3">
+                <div class="text-align">
+            <i class="fa fa-user fa-lg"></i>
+            <label><b>Username:</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+           
+        </div>
+
+        <div class="fontpassword">
+            <i class="fa fa-key fa-lg"></i>
+            <label><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        </div>
+
+        <button type="submit">Login</button>
+        <input type="checkbox" checked="checked">
+         Remember me
+    </div>
+</div>
+</div>
+</body>
+</html>

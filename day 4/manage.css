@@ -1,0 +1,59 @@
+.lb{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-size: cover;
+    height: 400%;
+    width: 5000;
+}
+h1{
+    color: white;
+    margin-left: 35%;
+}
+
+.A{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+    font-size: 15px;
+
+    
+}
+.py{
+    margin-left: 20px;
+    
+
+}
+a{
+    color: rgb(88, 138, 231);
+}
+
+.java{
+    margin-left:60px ;
+}
+
+h3{
+    color: white;
+    
+}
+.jv{
+    margin-left: 85%;
+    margin-top: 100px;
+}
+.C{
+    color: antiquewhite;
+    margin-left: 200px;
+    font-size: 20px;
+    margin-top: -170px;
+}
+.D{
+    color: antiquewhite;
+    margin-right: 200px;
+    font-size: 20px;
+    margin-top: -140px;
+}
+    
